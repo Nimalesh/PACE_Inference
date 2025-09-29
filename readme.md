@@ -44,7 +44,8 @@ Clone the repository and automatically download the large model file with Git LF
 
 ```bash
 git clone https://github.com/Nimalesh/PACE_Inference.git
-cd PACE_Inference```
+cd PACE_Inference
+```
 *(If you have already cloned the repository without Git LFS, run `git lfs pull` inside the directory to download the model file.)*
 
 ### 4. Create a Virtual Environment & Install Dependencies
@@ -53,12 +54,15 @@ This creates an isolated Python environment for the project.
 ```bash
 # Create the environment
 python3 -m venv venv
-
+``` 
 # Activate it
 source venv/bin/activate
 
 # Install required libraries
-```pip install -r requirements.txt```
+``` bash
+pip install -r requirements.txt 
+
+```
 
 ## Usage Instructions
 
@@ -72,7 +76,7 @@ python src/main.py \
     --input ./sample_input \
     --output ./output \
     --task seg \
-    --device cpu```
+    --device cpu
 ```
 #### **Classification Task**
 This will process the same images and save a `predictions.csv` file in `./output/classification/`.
