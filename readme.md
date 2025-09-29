@@ -13,14 +13,14 @@ PACE_Inference/
 ├── output/
 │   └── (Results will be saved here)
 ├── src/
-│   ├── main.py               
-│   ├── model.py              
-│   └── utils/                
-├── .gitattributes            
-├── .gitignore                
-├── Dockerfile                
-├── README.md                
-└── requirements.txt          
+│   ├── main.py
+│   ├── model.py
+│   └── utils/
+├── .gitattributes
+├── .gitignore
+├── Dockerfile
+├── README.md
+└── requirements.txt
 ```
 
 ## Setup and Installation
@@ -30,15 +30,11 @@ PACE_Inference/
 - Git and **Git LFS** (Large File Storage)
 
 ### 2. Install Git LFS
-Our model file (`checkpoints/best_model.pth`) is over 100MB and requires Git LFS. **You must install it before cloning.**
+Our model file (`checkpoints/best_model.pth`)
 
 - **On macOS (using Homebrew):**
   ```bash
   brew install git-lfs
-  ```
-- **On Linux (Debian/Ubuntu):**
-  ```bash
-  sudo apt-get install git-lfs
   ```
 
 After installing, run `git lfs install` once to initialize it.
@@ -62,7 +58,7 @@ python3 -m venv venv
 source venv/bin/activate
 
 # Install required libraries
-pip install -r requirements.txt```
+```pip install -r requirements.txt```
 
 ## Usage Instructions
 
@@ -77,7 +73,7 @@ python src/main.py \
     --output ./output \
     --task seg \
     --device cpu```
-
+```
 #### **Classification Task**
 This will process the same images and save a `predictions.csv` file in `./output/classification/`.
 
